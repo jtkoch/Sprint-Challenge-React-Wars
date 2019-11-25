@@ -1,5 +1,13 @@
 import React from 'react';
 import './App.css';
+import StarWarsList from "./components/StarWarsList";
+import styled from "styled-components";
+
+const Header = styled.h1`
+color: maroon;
+font-family: 'Bungee Inline', cursive;
+font-size: 80px;
+`
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -11,7 +19,8 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">React Wars</h1>
+      <Header>React Wars</Header>
+      <StarWarsList></StarWarsList>
     </div>
   );
 }
